@@ -11,6 +11,7 @@ Criteria used during the design were:
 * use of interfaces for each module (View, Presenter, and Model), they are all grouped in a Contract interface
 * presenter is unaware of the view lifecycle, so most likely it should disappear with - say - a configuration change
 * Context should be confined in the view, but in some situation it's needed in the presenter or even in the model, so as a compromise their interfaces allow to set and retrieve the view context - checking that it's safe to use it will be left to the implementation
+* WeakReference to handle the View instance from the Presenter
 
 # License
 ```
