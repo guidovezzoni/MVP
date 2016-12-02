@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/guidovezzoni/MVP.svg)](https://jitpack.io/#guidovezzoni/MVP)
+
 # MVP
 Simple library to help implementing a base MVP project
 
@@ -12,6 +14,23 @@ Criteria used during the design were:
 * presenter is unaware of the view lifecycle, so most likely it should disappear with - say - a configuration change
 * Context should be confined in the view, but in some situation it's needed in the presenter or even in the model, so as a compromise their interfaces allow to set and retrieve the view context - checking that it's safe to use it will be left to the implementation
 * WeakReference to handle the View instance from the Presenter
+
+# Usage
+Add the JitPack repository in your root build.gradle at the end of repositories:
+```
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+Add the dependency
+```
+dependencies {
+	        compile 'com.github.guidovezzoni:MVP:v0.1.0'
+	}
+```
 
 # License
 ```
