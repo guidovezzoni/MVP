@@ -28,7 +28,7 @@ allprojects {
 Add the dependency
 ```
 dependencies {
-	        compile 'com.github.guidovezzoni:MVP:v0.1.0'
+	        compile 'com.github.guidovezzoni:mvp:0.1.1'
 	}
 ```
 
