@@ -35,9 +35,11 @@ public interface ExtendedContract<D, A, V extends ExtendedContract.View, P exten
 
     interface View<D, P> extends BaseContract.View<P> {
 
-        void updateUIWithNewData(D data);
+        void dataRequestSuccess(D data);
 
-        void cannotUpdateUIWithNewData(String message);
+        void dataRequestError(String message);
+
+        void dataRequestCancelled();
 
     }
 
