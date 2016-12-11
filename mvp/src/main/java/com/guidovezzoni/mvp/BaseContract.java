@@ -81,16 +81,20 @@ public interface BaseContract<V extends BaseContract.View, P extends BaseContrac
          * We shouldn't have the context in our Presenter, however due to Android structure, sometimes it's needed.
          * When we do set it, we emphasise that we shouldn't.
          *
+         * Deprecated because I'll remove it as soon as I find a better solution
          * @param context
          */
+        @Deprecated
         void setContextAndBreakMVPPattern(Context context);
 
         /**
          * We shouldn't have the context in our Presenter, however due to Android structure, sometimes it's needed.
          * When we do get it, we emphasise that we shouldn't.
          *
+         * Deprecated because I'll remove it as soon as I find a better solution
          * @return
          */
+        @Deprecated
         Context getContextAndBreakMVPPattern();
     }
 
@@ -125,16 +129,20 @@ public interface BaseContract<V extends BaseContract.View, P extends BaseContrac
          * We shouldn't have the context in our Model, however due to Android structure, sometimes it's needed.
          * When we do set it, we emphasise that we shouldn't.
          *
+         * Deprecated because I'll remove it as soon as I find a better solution
          * @param context
          */
+        @Deprecated
         void setContextAndBreakMVPPattern(Context context);
 
         /**
          * We shouldn't have the context in our Model, however due to Android structure, sometimes it's needed.
          * When we do get it, we emphasise that we shouldn't.
          *
+         * Deprecated because I'll remove it as soon as I find a better solution
          * @return
          */
+        @Deprecated
         Context getContextAndBreakMVPPattern();
     }
 }

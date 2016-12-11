@@ -64,8 +64,10 @@ public abstract class BaseModelImplementation<P extends BaseContract.Presenter>
      * We shouldn't have the context in our Model, however due to Android structure, sometimes it's needed.
      * When we do set it, we emphasise that we shouldn't.
      *
+     * Deprecated because I'll remove it as soon as I find a better solution
      * @return
      */
+    @Deprecated
     @Override
     public Context getContextAndBreakMVPPattern() {
         if (mContext == null) {
@@ -78,8 +80,10 @@ public abstract class BaseModelImplementation<P extends BaseContract.Presenter>
      * We shouldn't have the context in our Model, however due to Android structure, sometimes it's needed.
      * When we do set it, we emphasise that we shouldn't.
      *
+     * Deprecated because I'll remove it as soon as I find a better solution
      * @param context
      */
+    @Deprecated
     @Override
     public void setContextAndBreakMVPPattern(Context context) {
         mContext = context;

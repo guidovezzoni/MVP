@@ -32,6 +32,17 @@ dependencies {
 	}
 ```
 
+# History
+
+######version 0.1.2
+
+* aar now contains sources
+* context calls are now flagged as deprecated
+* ExtendedContract improved
+* minor changes in BasePresenterImplementation
+
+
+
 # License
 ```
 Licensed to the Apache Software Foundation (ASF) under one

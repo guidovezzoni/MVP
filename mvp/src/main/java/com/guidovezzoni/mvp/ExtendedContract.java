@@ -20,26 +20,43 @@
  */
 package com.guidovezzoni.mvp;
 
-public interface ExtendedContract<D, V extends ExtendedContract.View, P extends ExtendedContract.Presenter, M extends ExtendedContract.Model>
+/**
+ * This Contract defines an interface for a basic exchange of data. It's limited to one use-case,
+ * it's more an example of a simple use.
+ * Whenever more than one use-case is needed it's recommended to design a custom contract
+ *
+ * @param <D> data being exchanged
+ * @param <V> view
+ * @param <P> presenter
+ * @param <M> model
+ */
+public interface ExtendedContract<D, A, V extends ExtendedContract.View, P extends ExtendedContract.Presenter, M extends ExtendedContract.Model>
         extends BaseContract<V, P, M> {
 
-    interface View<P> extends BaseContract.View<P> {
+    interface View<D, P> extends BaseContract.View<P> {
+
+        void updateUIWithNewData(D data);
+
+        void cannotUpdateUIWithNewData(String message);
 
     }
 
     interface Presenter<V, M> extends BaseContract.Presenter<V, M> {
 
-        void requestData();
+        void viewNeedsData();
 
     }
 
-    interface Model<P> extends BaseContract.Model<P> {
+    interface Model<A, P> extends BaseContract.Model<P> {
 
         interface OnModelListener<D> {
+
             void onDataRetrieved(D data);
+
+            void onDataUnavailable(String message);
         }
 
-        void retrieveData(OnModelListener listener);
+        void retrieveData(A arg, OnModelListener listener);
 
     }
 
