@@ -35,7 +35,7 @@ public interface ExtendedContract<D, A, V extends ExtendedContract.View, P exten
 
     interface View<D, P> extends BaseContract.View<P> {
 
-        void dataRequestSuccess(D data);
+        void dataRequestSuccessful(D data);
 
         void dataRequestError(String message);
 
@@ -56,6 +56,8 @@ public interface ExtendedContract<D, A, V extends ExtendedContract.View, P exten
             void onDataRetrieved(D data);
 
             void onDataUnavailable(String message);
+
+            void onRequestCancelled();
         }
 
         void retrieveData(A arg, OnModelListener listener);
