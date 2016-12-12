@@ -34,13 +34,24 @@ dependencies {
 
 # History
 
-######version 0.1.2
+######version 0.1.4 12/12/2016
+
+* updated ExtendedContract View and OnModelListener to support cancelled network request
+
+######version 0.1.3 11/12/2016
+
+* updated ExtendedContract View to support cancelled network request
+
+######version 0.1.2 11/12/2016
 
 * aar now contains sources
 * context calls are now flagged as deprecated
 * ExtendedContract improved
 * minor changes in BasePresenterImplementation
 
+######version 0.1.1
+
+######version 0.1.0
 
 
 # License
