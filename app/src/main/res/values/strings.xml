@@ -1,4 +1,7 @@
 <resources>
-    <string name="app_name">MVPLibrary</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name">Sample MVP App</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="data_unavailable">Data unavailable</string>
 </resources>
