@@ -53,6 +53,9 @@ dependencies {
 
 ######version 0.1.0
 
+# Sample App
+
+The sample app shows a simple application for the library.
 
 # License
 ```
