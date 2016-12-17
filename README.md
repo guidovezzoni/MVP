@@ -34,6 +34,17 @@ dependencies {
 
 # History
 
+######version 0.1.7 17/12/2016
+* gradle fixed (for real)
+
+######version 0.1.6 17/12/2016 [BROKEN]
+* gradle fixed
+
+######version 0.1.5 17/12/2016 [BROKEN]
+* updated for mvp 0.1.5
+* removed some comments
+* minor changes for coding style
+
 ######version 0.1.4 12/12/2016
 
 * updated ExtendedContract View and OnModelListener to support cancelled network request
