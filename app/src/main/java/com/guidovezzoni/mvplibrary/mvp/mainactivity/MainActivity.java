@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements MainActivityContr
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mPresenter = new MainActivityPresenterImplementation();
+        mPresenter = new MainActivityPresenterImplementation(new MainActivityModelImplementation());
 
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(mToolbar);

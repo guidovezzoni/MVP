@@ -4,10 +4,6 @@ import com.guidovezzoni.mvp.BasePresenterImplementation;
 import com.guidovezzoni.mvp.ExtendedContract;
 import com.guidovezzoni.mvplibrary.model.Forecast;
 
-/**
- * Created by guido on 10/12/16.
- */
-
 public class MainActivityPresenterImplementation
         extends BasePresenterImplementation<MainActivityContract.View, MainActivityContract.Model>
         implements MainActivityContract.Presenter {
@@ -16,6 +12,10 @@ public class MainActivityPresenterImplementation
     private static final Long NEWYORK_ID= 5128638L;
 
     private Long mCurrentCityId = null;
+
+    public MainActivityPresenterImplementation(MainActivityContract.Model model) {
+        super(model);
+    }
 
     /**
      * simply refresh current city id
@@ -27,11 +27,6 @@ public class MainActivityPresenterImplementation
         } else {
             viewPressedLondon();
         }
-    }
-
-    @Override
-    public MainActivityContract.Model initModel() {
-        return new MainActivityModelImplementation();
     }
 
     @Override

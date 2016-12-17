@@ -6,10 +6,6 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
 
-/**
- * Created by guido on 09/12/16.
- */
-
 public interface OpenWeatherMapService {
     // sample: http://api.openweathermap.org/data/2.5/forecast?id=%d&APPID=d85b2bcb9955bfad728e28a87699c5bb
     @GET(Api.DATA_FORECAST)

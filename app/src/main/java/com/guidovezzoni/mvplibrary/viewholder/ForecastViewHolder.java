@@ -8,10 +8,6 @@ import android.widget.TextView;
 import com.guidovezzoni.mvplibrary.R;
 
 
-/**
- * Created by guido on 09/12/16.
- */
-
 public class ForecastViewHolder extends RecyclerView.ViewHolder {
     public ImageView mIcon;
     public TextView mDate;

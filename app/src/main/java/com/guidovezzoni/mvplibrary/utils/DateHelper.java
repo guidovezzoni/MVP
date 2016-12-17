@@ -1,12 +1,10 @@
 package com.guidovezzoni.mvplibrary.utils;
 
+import android.support.annotation.Nullable;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
-
-/**
- * Created by guido on 11/12/16.
- */
 
 public class DateHelper {
     public static final String TIME_FORMAT = "dd MMMM 'at' HH:mm";
@@ -22,7 +20,7 @@ public class DateHelper {
     private static final int HOUR_MILLIS = 60 * MINUTE_MILLIS;
     private static final int DAY_MILLIS = 24 * HOUR_MILLIS;
 
-    public static String getFormattedDate(String format, Date date) {
+    public static String getFormattedDate(String format, @Nullable Date date) {
         if (date==null){
             return "";
         }

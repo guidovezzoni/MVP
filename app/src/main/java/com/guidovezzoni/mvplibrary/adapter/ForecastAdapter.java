@@ -14,10 +14,6 @@ import com.guidovezzoni.mvplibrary.viewholder.ForecastViewHolder;
 
 import java.util.List;
 
-/**
- * Created by guido on 09/12/16.
- */
-
 public class ForecastAdapter extends RecyclerView.Adapter<ForecastViewHolder> {
     private static final String ICONS_URL_PARAM = "http://openweathermap.org/img/w/%s.png";
     private static final String DEG_CENT = " °C";

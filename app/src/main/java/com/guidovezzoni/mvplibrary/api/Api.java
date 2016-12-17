@@ -1,9 +1,5 @@
 package com.guidovezzoni.mvplibrary.api;
 
-/**
- * Created by guido on 09/12/16.
- */
-
 public class Api {
     // query params
     public static final String QUERY_PARAM_CITY_ID = "id";

@@ -19,10 +19,6 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-/**
- * Created by guido on 10/12/16.
- */
-
 public class MainActivityModelImplementation
         extends BaseModelImplementation<MainActivityContract.Presenter>
         implements MainActivityContract.Model {
@@ -86,7 +82,10 @@ public class MainActivityModelImplementation
 
     @Override
     public void cancelAsyncRequests() {
-        mForecastCall.cancel();
+        // in case it happend before the Call has been created
+        if (mForecastCall!=null) {
+            mForecastCall.cancel();
+        }
     }
 
     /**
