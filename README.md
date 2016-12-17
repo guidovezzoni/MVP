@@ -14,6 +14,7 @@ Criteria used during the design were:
 * presenter is unaware of the view lifecycle, so most likely it should disappear with - say - a configuration change
 * Context should be confined in the view, but in some situation it's needed in the presenter or even in the model, so as a compromise their interfaces allow to set and retrieve the view context - checking that it's safe to use it will be left to the implementation
 * WeakReference to handle the View instance from the Presenter
+* same sample of Unit Test / Mock for Presenter will be available shortly in the sample app
 
 # Usage
 Add the JitPack repository in your root build.gradle at the end of repositories:
@@ -31,6 +32,9 @@ dependencies {
 	        compile 'com.github.guidovezzoni:mvp:0.1.1'
 	}
 ```
+# Sample App
+
+The sample app shows a simple application for the library.
 
 # History
 
@@ -63,10 +67,6 @@ dependencies {
 ######version 0.1.1
 
 ######version 0.1.0
-
-# Sample App
-
-The sample app shows a simple application for the library.
 
 # License
 ```
