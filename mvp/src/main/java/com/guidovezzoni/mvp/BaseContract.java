@@ -53,13 +53,6 @@ public interface BaseContract<V extends BaseContract.View, P extends BaseContrac
         V getView();
 
         /**
-         * Template Method that instantiate the Model
-         *
-         * @return a newly created Model instance
-         */
-        M initModel();
-
-        /**
          * Set a reference to the view the view - into weak-reference by default
          *
          * @param baseView

@@ -34,6 +34,10 @@ public abstract class BasePresenterImplementation<V extends BaseContract.View, M
 
     private Context mContext;
 
+    public BasePresenterImplementation(M model) {
+        mModel = model;
+    }
+
     /**
      * Obtain a reference to the Model for usage within the Presenter
      *
@@ -70,7 +74,6 @@ public abstract class BasePresenterImplementation<V extends BaseContract.View, M
     @Override
     public void attachView(V view) {
         mView = new WeakReference<>(view);
-        mModel = initModel();
         mModel.attachPresenter(this);
 
         // if a context is set, then propagate it to the Model
