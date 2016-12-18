@@ -1,4 +1,4 @@
-[![](https://jitpack.io/v/guidovezzoni/MVP.svg)](https://jitpack.io/#guidovezzoni/MVP)
+[![](https://jitpack.io/v/guidovezzoni/mvp.svg)](https://jitpack.io/#guidovezzoni/mvp)
 
 # MVP
 Simple library to help implementing a base MVP project
