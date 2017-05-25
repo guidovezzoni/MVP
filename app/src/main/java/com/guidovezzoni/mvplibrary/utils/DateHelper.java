@@ -3,7 +3,9 @@ package com.guidovezzoni.mvplibrary.utils;
 import android.support.annotation.Nullable;
 
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.Locale;
 
 public class DateHelper {
@@ -30,5 +32,24 @@ public class DateHelper {
             time = time.substring(1);
         }
         return time;
+    }
+
+    /**
+     * @param year
+     * @param month     The month value is 0-based, so it may be clearer to use a constant like {@code JANUARY}.
+     * @param date
+     * @param hourOfDay
+     * @param minute
+     * @param second
+     * @return
+     */
+    public static Date getASpecificDate(int year, int month, int date, int hourOfDay, int minute, int second) {
+        Calendar working = GregorianCalendar.getInstance();
+        working.set(year, month, date, hourOfDay, minute, second);
+        return working.getTime();
+    }
+
+    public static Date getASpecificDate(int year, int month, int date) {
+        return getASpecificDate(year, month, date, 0, 0, 1);
     }
 }
