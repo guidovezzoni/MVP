@@ -29,7 +29,7 @@ allprojects {
 Add the dependency
 ```
 dependencies {
-	        compile 'com.github.guidovezzoni:mvp:0.1.1'
+	        compile 'com.github.guidovezzoni:mvp:0.1.7'
 	}
 ```
 # Sample App
