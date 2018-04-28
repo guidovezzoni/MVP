@@ -1,6 +1,6 @@
 [![](https://jitpack.io/v/guidovezzoni/mvp.svg)](https://jitpack.io/#guidovezzoni/mvp)
 
-# MVP
+# MVP ( OBSOLETE )
 Simple library to help implementing a base MVP project
 
 Looking online for MVP samples or libraries I could find either very simple projects that didn't account for all 
